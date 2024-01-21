@@ -1,0 +1,184 @@
+/* Universal and Font Settings for All*/
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Dancing Script', cursive;
+}
+.container{
+    height: 850px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.one{
+    background-image: url(img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.container-navigation{
+    margin-top: 10px;
+    /* border:1px solid white; */
+    width: 50%;
+    height: 50px;
+}
+nav{
+    /* background-color: black; */
+    padding:10px 20px;
+}
+nav a{
+    font-size: 20px;
+    margin:0 10px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+
+}
+nav a:hover{
+    border: 1px solid white;
+   background: black;
+   color: red;
+   border-radius: 2px;
+    transition: all ease 0.7s;
+}
+.title-container{
+    animation: coming ease-in-out 5s;
+}
+@keyframes coming {
+    0%,50%{
+        transform: translateY(-300px);
+    }
+    25%,75%{
+        transform: translateY(-100px);
+    }
+    
+}
+.title{
+    font-family: 'Grape Nuts', cursive;
+    text-align: center;
+    font-size: 72px;
+    background:linear-gradient(30deg,white,orange,rgb(42, 39, 39));
+    background-clip: text;
+    color: transparent;
+    animation: changing ease-in-out 5s;
+    margin-bottom: 0;
+}
+@keyframes changing {
+    
+    0%,50%{
+        background:linear-gradient(30deg,red,blue,green);
+        background-clip: text;
+        color: transparent;
+    }
+    25%,75%{
+        background:linear-gradient(30deg,green,blue,red);
+        background-clip: text;
+        color: transparent;
+    }
+    100%{
+        background:linear-gradient(30deg,white,black,orange);
+        background-clip: text;
+        color: transparent;
+    }
+    
+}
+.bottom-description{
+    width: 100%;
+    background-color: black;
+    height: 150px;
+}
+h3{
+    color: white;
+    padding: 10px 10px;
+    line-height: 30px;
+    font-size: larger;
+}
+.two{
+    background-image: url(img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.speech-description{
+    font-size: 30px;
+    color: rgb(120, 233, 250);
+    padding: 0px 20px;
+    margin: 0px 20px;
+    line-height: 45px;
+}
+.speech-content{
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 5%;
+}
+.three{
+    background-image: url(img3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#history-contents{
+    box-shadow: 0px 0px 10px red;
+    width: 50%;
+    text-align: center;
+    backdrop-filter: blur(2px);
+}
+li{
+    list-style: none;
+}
+li:hover{
+    cursor: pointer;
+    scale: 1.2;
+    box-shadow: 0px 0px 100px grey;
+    margin: 0 40px;
+    color: red;
+}
+.four{
+    background-image: url(img4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.color-change{
+    color: white;
+}
+.five{
+    background-image: url(img5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.credits{
+    display: flex;
+    justify-content: space-around;
+}
+.credits p{
+    font-size: 24px;
+}
+.credits p>span{
+    font-weight: 700;
+}
+.credits a{
+    position: fixed;
+    right: 50px;
+    bottom: 5px;
+    font-size: 50px;
+    color: white;
+    filter: drop-shadow(0px 0px 10px red);
+}
+.credits a:hover{
+    transition: all ease 0.5s;
+    animation: check 0.5s ease-in-out;
+}
+@keyframes check {
+    0%,50%{
+        transform: translateY(10px);
+    }
+    
+}
